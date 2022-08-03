@@ -21,6 +21,8 @@ import Slider from '@material-ui/core/Slider';
 import Switch from '@material-ui/core/Switch';
 import Box from '@material-ui/core/Box';
 import Avatar from '@material-ui/core/Avatar';
+import Badge from '@material-ui/core/Badge';
+import MailIcon from '@material-ui/icons/Mail';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -216,6 +218,20 @@ function App() {
       <hr/>
       <h2>Avatar</h2>
       <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+      <hr/>
+      <h2>Badges</h2>
+      <Badge badgeContent={4} color="primary">
+        <MailIcon />
+      </Badge>
+      <Badge badgeContent={100} color="primary" max={40}>
+        <MailIcon />
+      </Badge>
+      <Badge anchorOrigin={{ vertical: "bottom", horizontal: "right" }} badgeContent={100} color="primary" max={50} >
+        <MailIcon />
+      </Badge>
+      <Badge color="primary" variant="dot">
+        <MailIcon />
+      </Badge>
       <hr/>
     </div>
 
