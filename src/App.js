@@ -20,6 +20,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import Slider from '@material-ui/core/Slider';
 import Switch from '@material-ui/core/Switch';
 import Box from '@material-ui/core/Box';
+import Avatar from '@material-ui/core/Avatar';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -143,27 +144,27 @@ function App() {
       <h2>Switch</h2>
       <Switch />
       <hr/>
-      <h3>Box</h3>
+      <h2>Box</h2>
       <Box>Hello World</Box>
-      <h3>Alignment</h3>
+      <h2>Alignment</h2>
       <Box textAlign="left">Hello</Box>
       <Box textAlign="center">Hello</Box>
       <Box textAlign="right">Hello</Box>
-      <h3>Font Weight</h3>
+      <h2>Font Weight</h2>
       <Box fontWeight="fontWeightBold">Hello</Box>
       <Box fontWeight={500}>Hello</Box>
-      <h3>Font Size</h3>
+      <h2>Font Size</h2>
       <Box fontSize={24}>Hello</Box>
-      <h3>Font Style</h3>
+      <h2>Font Style</h2>
       <Box fontStyle="italic">Hello</Box> 
-      <h3>Color</h3>
+      <h2>Color</h2>
       <Box color="primary.main">primary</Box>
       <Box color="secondary.main">secondary</Box>
       <Box color="error.main">error</Box>
       <Box color="warning.main">warning</Box>
       <Box color="info.main">info</Box>
       <Box color="success.main">success</Box>
-      <h3>Background Color</h3>
+      <h2>Background Color</h2>
       <Box bgcolor="primary.main">primary</Box>
       <Box bgcolor="secondary.main">secondary</Box>
       <Box bgcolor="error.main">error</Box>
@@ -207,12 +208,17 @@ function App() {
       <Box border={1} borderBottom={0}>Hello 3</Box>
       <Box border={1} borderLeft={0}>Hello 4</Box>
       <Box border={1} borderRight={0}>Hello 5</Box>
-      <h3>Border Color</h3>
+      <h2>Border Color</h2>
       <Box border={1} borderColor="secondary.main">Hello</Box>
       <h2>Border Radius</h2>
       <Box border={1} borderRadius="50%" width={300} height={300}></Box>
       <Box border={1} borderRadius={16} width={300} height={300}></Box>
+      <hr/>
+      <h2>Avatar</h2>
+      <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+      <hr/>
     </div>
+
   );
 }
 
