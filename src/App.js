@@ -1,4 +1,6 @@
 import './App.css';
+import React,{useState} from 'react';
+// for button
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
@@ -10,11 +12,16 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import { CheckBox } from '@material-ui/icons';
 import { FormControlLabel } from '@material-ui/core';
-// fot data & time
+// for data & time
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+// for radio
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 
-
+// for data & time
 const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
@@ -30,6 +37,13 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
+  
+  // for data & time
+  const [value, setValue] = React.useState('female');
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
   return (
     <div className="App">
      <h2>Button</h2>
@@ -101,6 +115,16 @@ function App() {
     }}
   />
 </form>
+<hr/>
+<FormControl component="fieldset">
+      <FormLabel component="legend">Gender</FormLabel>
+      <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
+        <FormControlLabel value="female" control={<Radio />} label="Female" />
+        <FormControlLabel value="male" control={<Radio />} label="Male" />
+        <FormControlLabel value="other" control={<Radio />} label="Other" />
+        <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
+      </RadioGroup>
+    </FormControl>
 
     </div>
   );
