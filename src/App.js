@@ -37,6 +37,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Tooltip from '@material-ui/core/Tooltip';
+import Typography from '@material-ui/core/Typography';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -307,6 +308,14 @@ function App() {
           <DeleteIcon />
         </IconButton>
       </Tooltip>
+      <hr/>
+      <h2>Typography(diplay size)</h2>
+      <Typography variant="h1">Heading H1</Typography>
+      <Typography variant="h6">Heading H6</Typography>
+      <Typography variant="subtitle1">Subtitle 1</Typography>
+      <Typography variant="subtitle2">Subtitle 2</Typography>
+      <Typography variant="body1">Body 1</Typography>
+      <Typography variant="body2">Body 2</Typography>
       <hr/>
     </div>
 
