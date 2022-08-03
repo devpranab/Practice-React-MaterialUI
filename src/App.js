@@ -1,6 +1,5 @@
 import './App.css';
 import React,{useState} from 'react';
-// for button
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
@@ -12,18 +11,15 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import NavigationIcon from '@material-ui/icons/Navigation';
 import { CheckBox } from '@material-ui/icons';
 import { FormControlLabel } from '@material-ui/core';
-// for data & time
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-// for radio
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-// for slider
 import Slider from '@material-ui/core/Slider';
-// for switch
 import Switch from '@material-ui/core/Switch';
+import Box from '@material-ui/core/Box';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -146,6 +142,34 @@ function App() {
       <Slider value="5" />
       <h2>Switch</h2>
       <Switch />
+      <hr/>
+      <h3>Box</h3>
+      <Box>Hello World</Box>
+      <h3>Alignment</h3>
+      <Box textAlign="left">Hello</Box>
+      <Box textAlign="center">Hello</Box>
+      <Box textAlign="right">Hello</Box>
+      <h3>Font Weight</h3>
+      <Box fontWeight="fontWeightBold">Hello</Box>
+      <Box fontWeight={500}>Hello</Box>
+      <h3>Font Size</h3>
+      <Box fontSize={24}>Hello</Box>
+      <h3>Font Style</h3>
+      <Box fontStyle="italic">Hello</Box> 
+      <h3>Color</h3>
+      <Box color="primary.main">primary</Box>
+      <Box color="secondary.main">secondary</Box>
+      <Box color="error.main">error</Box>
+      <Box color="warning.main">warning</Box>
+      <Box color="info.main">info</Box>
+      <Box color="success.main">success</Box>
+      <h3>Background Color</h3>
+      <Box bgcolor="primary.main">primary</Box>
+      <Box bgcolor="secondary.main">secondary</Box>
+      <Box bgcolor="error.main">error</Box>
+      <Box bgcolor="warning.main">warning</Box>
+      <Box bgcolor="info.main">info</Box>
+      <Box bgcolor="success.main">success</Box>
       <hr/>
     </div>
   );
