@@ -23,6 +23,7 @@ import Box from '@material-ui/core/Box';
 import Avatar from '@material-ui/core/Avatar';
 import Badge from '@material-ui/core/Badge';
 import MailIcon from '@material-ui/icons/Mail';
+import Chip from '@material-ui/core/Chip';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -232,6 +233,12 @@ function App() {
       <Badge color="primary" variant="dot">
         <MailIcon />
       </Badge>
+      <hr/>
+      <h2>Chip</h2>
+      <Chip label="Basic" />
+      <Chip label="Disabled" disabled />
+      <Chip avatar={<Avatar>M</Avatar>} label="Avatar Chip" />
+      <Chip avatar={<Avatar src="https://cdn.pixabay.com/photo/2015/09/02/13/24/girl-919048_960_720.jpg" />} label="Avatar Chip" />
       <hr/>
     </div>
 
