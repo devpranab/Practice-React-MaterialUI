@@ -171,6 +171,47 @@ function App() {
       <Box bgcolor="info.main">info</Box>
       <Box bgcolor="success.main">success</Box>
       <hr/>
+      <h2>Margin</h2>
+      <Box m={10}> All Side Margin</Box>
+      <Box mt={10}>Margin Top</Box>
+      <Box mb={10}>Margin Bottom</Box>
+      <Box ml={10}>Margin Left</Box>
+      <Box mr={10}>Margin Right</Box>
+      <Box mx={10}>Margin Left Right</Box>
+      <Box my={10}>Margin Top Bottom</Box>
+      <h2>Padding</h2>
+      <Box p={10}> All Side Padding</Box>
+      <Box pt={10}>Padding Top</Box>
+      <Box pb={10}>Padding Bottom</Box>
+      <Box pl={10}>Padding Left</Box>
+      <Box pr={10}>Padding Right</Box>
+      <Box px={10}>Padding Left Right</Box>
+      <Box py={10}>Padding Top Bottom</Box>
+      <h2>Width Sizing</h2>
+      <Box width={1 / 4} bgcolor="red">Width 1/4</Box>
+      <Box width={500} bgcolor="yellow">Width 500px</Box>
+      <Box width="50%" bgcolor="pink">Width 50%</Box>
+      <Box width={1} bgcolor="green">Width 100%</Box>
+      <h2>Height Sizing</h2>
+      <Box height="50%" bgcolor="pink">Height 50%</Box>
+      <Box height={200} bgcolor="yellow">Height 200px</Box>
+      <h2>Border</h2>
+      <Box border={1}>Hello 1</Box>
+      <Box borderTop={1}>Hello 2</Box>
+      <Box borderBottom={1}>Hello 3</Box>
+      <Box borderLeft={1}>Hello 4</Box>
+      <Box borderRight={1}>Hello 5</Box>
+  
+      <Box border={0}>Hello 1</Box>
+      <Box border={1} borderTop={0}>Hello 2</Box>
+      <Box border={1} borderBottom={0}>Hello 3</Box>
+      <Box border={1} borderLeft={0}>Hello 4</Box>
+      <Box border={1} borderRight={0}>Hello 5</Box>
+      <h3>Border Color</h3>
+      <Box border={1} borderColor="secondary.main">Hello</Box>
+      <h2>Border Radius</h2>
+      <Box border={1} borderRadius="50%" width={300} height={300}></Box>
+      <Box border={1} borderRadius={16} width={300} height={300}></Box>
     </div>
   );
 }
