@@ -40,6 +40,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Container from '@material-ui/core/Container';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -324,6 +325,14 @@ function App() {
       <CircularProgress color="secondary" />
       <LinearProgress />
       <LinearProgress color="secondary" />
+      <hr/>
+      <Container maxWidth="lg">
+        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+      </Container>
+ 
+      {/* <Container fixed>
+        <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+      </Container> */}
       <hr/>
     </div>
 
