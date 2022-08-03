@@ -38,6 +38,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -316,6 +318,12 @@ function App() {
       <Typography variant="subtitle2">Subtitle 2</Typography>
       <Typography variant="body1">Body 1</Typography>
       <Typography variant="body2">Body 2</Typography>
+      <hr/>
+      <h2>Progress</h2>
+      <CircularProgress />
+      <CircularProgress color="secondary" />
+      <LinearProgress />
+      <LinearProgress color="secondary" />
       <hr/>
     </div>
 
