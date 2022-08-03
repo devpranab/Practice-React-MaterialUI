@@ -20,6 +20,10 @@ import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
+// for slider
+import Slider from '@material-ui/core/Slider';
+// for switch
+import Switch from '@material-ui/core/Switch';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -137,6 +141,12 @@ function App() {
         name="radio-button-demo"
         inputProps={{ 'aria-label': 'B' }}
       />
+      <hr/>
+      <h2>Slider</h2>
+      <Slider value="5" />
+      <h2>Switch</h2>
+      <Switch />
+      <hr/>
     </div>
   );
 }
