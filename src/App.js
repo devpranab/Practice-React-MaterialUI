@@ -30,6 +30,13 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/Inbox';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Tooltip from '@material-ui/core/Tooltip';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -262,6 +269,44 @@ function App() {
           <ListItemText primary="Inbox" />
         </ListItem>
       </List>
+      <hr/>
+      <h2>Table</h2>
+      <TableContainer>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>No</TableCell>
+              <TableCell align="right">Name</TableCell>
+              <TableCell align="right">Roll</TableCell>
+              <TableCell align="right">Class</TableCell>
+              <TableCell align="right">Subject</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell component="th" scope="row">1</TableCell>
+              <TableCell align="right">Sonam</TableCell>
+              <TableCell align="right">101</TableCell>
+              <TableCell align="right">11</TableCell>
+              <TableCell align="right">Math</TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell component="th" scope="row">2</TableCell>
+              <TableCell align="right">Rahul</TableCell>
+              <TableCell align="right">102</TableCell>
+              <TableCell align="right">11</TableCell>
+              <TableCell align="right">Math</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <hr/>
+      <h2>Tooltip</h2>
+      <Tooltip title="Delete">
+        <IconButton aria-label="delete">
+          <DeleteIcon />
+        </IconButton>
+      </Tooltip>
       <hr/>
     </div>
 
