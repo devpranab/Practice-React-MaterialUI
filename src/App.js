@@ -24,6 +24,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Badge from '@material-ui/core/Badge';
 import MailIcon from '@material-ui/icons/Mail';
 import Chip from '@material-ui/core/Chip';
+import Divider from '@material-ui/core/Divider';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import InboxIcon from '@material-ui/icons/Inbox';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -239,6 +245,23 @@ function App() {
       <Chip label="Disabled" disabled />
       <Chip avatar={<Avatar>M</Avatar>} label="Avatar Chip" />
       <Chip avatar={<Avatar src="https://cdn.pixabay.com/photo/2015/09/02/13/24/girl-919048_960_720.jpg" />} label="Avatar Chip" />
+      <hr/>
+      <h3>Divider</h3>
+      <Divider />
+      <Divider orientation="vertical" />
+      <hr/>
+      <h2>List</h2>
+      <List component="nav" aria-label="main mailbox folders">
+        <ListItem button>
+          <ListItemText primary="Drafts" />
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon>
+            <InboxIcon />
+          </ListItemIcon>
+          <ListItemText primary="Inbox" />
+        </ListItem>
+      </List>
       <hr/>
     </div>
 
