@@ -125,7 +125,18 @@ function App() {
         <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
       </RadioGroup>
     </FormControl>
-
+    <hr/>
+    <h2>Radio Button</h2>
+      <Radio
+        value="a"
+        name="radio-button-demo"
+        inputProps={{ 'aria-label': 'A' }}
+      />
+      <Radio
+        value="b"
+        name="radio-button-demo"
+        inputProps={{ 'aria-label': 'B' }}
+      />
     </div>
   );
 }
