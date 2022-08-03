@@ -41,6 +41,10 @@ import Typography from '@material-ui/core/Typography';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Hidden from '@material-ui/core/Hidden';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -334,6 +338,100 @@ function App() {
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
       </Container> */}
       <hr/>
+      <Grid container>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="yellow" p={5} textAlign="center">1</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="green" p={5} textAlign="center">2</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="blue" p={5} textAlign="center">4</Box>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} direction="row">
+        <Grid item lg={6} md={4} sm={12} xs={12}>
+          <Box bgcolor="yellow" p={5} textAlign="center">1</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="green" p={5} textAlign="center">2</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="blue" p={5} textAlign="center">4</Box>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} direction="row" justify="center">
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="yellow" p={5} textAlign="center">1</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="green" p={5} textAlign="center">2</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+      </Grid>
+    
+      <Grid container>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="yellow" p={5} textAlign="center">
+            <Grid container>
+              <Grid item xs={12}>
+                <Box bgcolor="red" p={5} textAlign="center">1-1</Box>
+              </Grid>
+              <Grid item xs={12}>
+                <Box bgcolor="blue" p={5} textAlign="center">1-2</Box>
+              </Grid>
+              <Grid item xs={12}>
+                <Box bgcolor="green" p={5} textAlign="center">1-3</Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="green" p={5} textAlign="center">2</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="blue" p={5} textAlign="center">
+            <Grid container>
+              <Grid item xs={12}>
+                <Box bgcolor="red" p={5} textAlign="center">4-1</Box>
+              </Grid>
+              <Grid item xs={12}>
+                <Box bgcolor="pink" p={5} textAlign="center">4-2</Box>
+              </Grid>
+              <Grid item xs={12}>
+                <Box bgcolor="green" p={5} textAlign="center">4-3</Box>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="yellow" p={5} textAlign="center">1</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="green" p={5} textAlign="center">2</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Hidden only="md">
+          <Grid item lg={3} md={4} sm={6} xs={12}>
+            <Box bgcolor="blue" p={5} textAlign="center">4</Box>
+          </Grid>
+        </Hidden>
+      </Grid>
     </div>
 
   );
