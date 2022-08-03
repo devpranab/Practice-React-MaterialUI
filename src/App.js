@@ -45,6 +45,11 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
+import Paper from '@material-ui/core/Paper';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -338,6 +343,7 @@ function App() {
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
       </Container> */}
       <hr/>
+      <h2>Grid</h2>
       <Grid container>
         <Grid item lg={3} md={4} sm={6} xs={12}>
           <Box bgcolor="yellow" p={5} textAlign="center">1</Box>
@@ -432,6 +438,62 @@ function App() {
           </Grid>
         </Hidden>
       </Grid>
+      <hr/>
+      <h2>Paper</h2>
+      <Grid container spacing={4}>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Paper elevation={9}>
+            <Box p={5} textAlign="center">1</Box>
+          </Paper>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Paper variant="outlined">
+            <Box p={5} textAlign="center">2</Box>
+          </Paper>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="blue" p={5} textAlign="center">4</Box>
+        </Grid>
+      </Grid>
+      <hr/>
+      <h2>Card</h2>
+      <Grid container spacing={4}>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Card>
+            <CardHeader title="Card hai ye" subheader="September 14, 2016" />
+            <CardContent>
+              <Typography color="textSecondary" gutterBottom>
+                Material UI 1
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Card variant="outlined">
+            <CardContent>
+              <Typography color="textSecondary" gutterBottom>
+                Material UI 2
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="red" p={5} textAlign="center">3</Box>
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <Box bgcolor="blue" p={5} textAlign="center">4</Box>
+        </Grid>
+      </Grid>
+      <hr/>
     </div>
 
   );
