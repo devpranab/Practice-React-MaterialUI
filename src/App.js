@@ -54,6 +54,9 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import MenuIcon from '@material-ui/icons/Menu';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -523,6 +526,19 @@ function App() {
           <Typography>Disabled Accordion</Typography>
         </AccordionSummary>
       </Accordion>
+      <hr/>
+      <h3>App Bar</h3>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6">
+            News
+          </Typography>
+          <Button color="inherit" >Login</Button>
+        </Toolbar>
+      </AppBar>
       <hr/>
     </div>
 
