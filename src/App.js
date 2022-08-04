@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useState} from 'react';
+import React, {useState} from 'react';
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
@@ -59,6 +59,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import Rating from '@material-ui/lab/Rating';
 import Link from '@material-ui/core/Link';
+import Alert from '@material-ui/lab/Alert';
 
 
 // for data & time
@@ -88,6 +89,8 @@ function App() {
   const classes = useStyles();
   const classes2 = useStyles2();
 
+  const [show, setShow] = useState(true);
+ 
   const preventDefault = (event) => event.preventDefault();
   
   // for data & time
@@ -572,6 +575,12 @@ function App() {
       </Link>
     </Typography>
       <hr/>
+    <h2>Alert</h2>
+    <Box>
+   {show && (
+  <Alert onClose={() => setShow(false)} severity="info">This is alert— check it out!</Alert>
+   )}
+   </Box>
     </div>
 
   );
