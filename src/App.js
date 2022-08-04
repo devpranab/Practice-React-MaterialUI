@@ -67,6 +67,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
+import Backdrop from '@material-ui/core/Backdrop';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -87,6 +88,14 @@ const useStyles2 = makeStyles((theme) => ({
     '& > * + *': {
       marginLeft: theme.spacing(2),
     },
+  },
+}));
+
+// for backdrop
+const useStyles3 = makeStyles((theme) => ({
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff',
   },
 }));
 
@@ -130,6 +139,16 @@ function App() {
     }
 
     setOpen(false);
+  };
+
+  // for backdrop
+  const classes3 = useStyles3();
+  const [openss, setOpenk] = useState(false);
+  const handleClosess = () => {
+    setOpenk(false);
+  };
+  const handleToggle = () => {
+    setOpenk(!openss);
   };
 
   return (
@@ -669,6 +688,16 @@ function App() {
       />
     </div>
    <hr/>
+   <h2>Backdrop</h2>
+   <div>
+      <Button variant="outlined" color="primary" onClick={handleToggle}>
+        Show backdrop
+      </Button>
+      <Backdrop className={classes3.backdrop} open={openss} onClick={handleClosess}>
+        <CircularProgress color="secondary" />
+      </Backdrop>
+    </div>
+    <hr/>
     </div>
 
   );
