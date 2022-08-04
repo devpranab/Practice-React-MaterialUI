@@ -1,7 +1,7 @@
 # Practice-React-MaterialUI
 https://v4.mui.com/getting-started/installation/
 <h4>React UI framework is Material UI, component based like Bootstrap</h4>
-<h5>Use of </h5>
+<h5>Use of ThemeProvider :</h5>
 
 index.js
 <code>
