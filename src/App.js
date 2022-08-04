@@ -73,6 +73,8 @@ import CustomizedMenus from './CustomizedMenus';
 import SimplePortal from './Portal';
 //import BasicImageList from './ImageList';
 import ComboBox from './Autocom';
+import Variants from './Skeleton';
+import { Skeleton } from '@material-ui/lab';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -711,6 +713,9 @@ function App() {
     <hr/>
     <h2>Autocomplete</h2>
      <ComboBox/>
+    <hr/>
+    <h2>Skeleton</h2>
+     <Skeleton/>
     <hr/>
     </div>
 
