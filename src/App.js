@@ -76,6 +76,7 @@ import ComboBox from './Autocom';
 import Variants from './Skeleton';
 //import { Skeleton } from '@material-ui/lab';
 import BasicImageList from './ImageList';
+import SimpleBreadcrumbs from './Breadcrumbs';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -721,6 +722,8 @@ function App() {
     <h2>ImageList</h2>
     <BasicImageList/>
     <hr/>
+    <h2>Breadcrumbs</h2>
+    <SimpleBreadcrumbs/>
     </div>
 
   );
