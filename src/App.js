@@ -70,8 +70,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import Backdrop from '@material-ui/core/Backdrop';
 // from another file
 import CustomizedMenus from './CustomizedMenus';
-import Portal from '@material-ui/core';
 import SimplePortal from './Portal';
+//import BasicImageList from './ImageList';
+import ComboBox from './Autocom';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -708,7 +709,9 @@ function App() {
     <h2>Portal</h2>
     <SimplePortal/>
     <hr/>
-    
+    <h2>Autocomplete</h2>
+     <ComboBox/>
+    <hr/>
     </div>
 
   );
