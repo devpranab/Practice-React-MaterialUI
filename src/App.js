@@ -74,7 +74,8 @@ import SimplePortal from './Portal';
 //import BasicImageList from './ImageList';
 import ComboBox from './Autocom';
 import Variants from './Skeleton';
-import { Skeleton } from '@material-ui/lab';
+//import { Skeleton } from '@material-ui/lab';
+import BasicImageList from './ImageList';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -715,7 +716,10 @@ function App() {
      <ComboBox/>
     <hr/>
     <h2>Skeleton</h2>
-     <Skeleton/>
+     <Variants/>
+    <hr/>
+    <h2>ImageList</h2>
+    <BasicImageList/>
     <hr/>
     </div>
 
