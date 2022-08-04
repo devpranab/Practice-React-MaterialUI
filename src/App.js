@@ -77,6 +77,7 @@ import Variants from './Skeleton';
 //import { Skeleton } from '@material-ui/lab';
 import BasicImageList from './ImageList';
 import SimpleBreadcrumbs from './Breadcrumbs';
+import TemporaryDrawer from './Drawer';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -724,6 +725,10 @@ function App() {
     <hr/>
     <h2>Breadcrumbs</h2>
     <SimpleBreadcrumbs/>
+    <hr/>
+    <h2>Drawer</h2>
+    <TemporaryDrawer/>
+    <hr/>
     </div>
 
   );
