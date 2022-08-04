@@ -68,6 +68,8 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 import Backdrop from '@material-ui/core/Backdrop';
+// from another file
+import CustomizedMenus from './MoreMUI';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -697,6 +699,9 @@ function App() {
         <CircularProgress color="secondary" />
       </Backdrop>
     </div>
+    <hr/>
+    <h2>Menu</h2>
+    <CustomizedMenus/>
     <hr/>
     </div>
 
