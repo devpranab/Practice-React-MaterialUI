@@ -57,6 +57,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
+import Rating from '@material-ui/lab/Rating';
+
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -539,6 +541,10 @@ function App() {
           <Button color="inherit" >Login</Button>
         </Toolbar>
       </AppBar>
+      <hr/>
+      <h2>Rating</h2>
+      <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+      <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
       <hr/>
     </div>
 
