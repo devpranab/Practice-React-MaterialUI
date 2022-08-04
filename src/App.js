@@ -58,6 +58,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import MenuIcon from '@material-ui/icons/Menu';
 import Rating from '@material-ui/lab/Rating';
+import Link from '@material-ui/core/Link';
 
 
 // for data & time
@@ -73,9 +74,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// for link
+const useStyles2 = makeStyles((theme) => ({
+  root: {
+    '& > * + *': {
+      marginLeft: theme.spacing(2),
+    },
+  },
+}));
+
 
 function App() {
   const classes = useStyles();
+  const classes2 = useStyles2();
+
+  const preventDefault = (event) => event.preventDefault();
   
   // for data & time
   const [value, setValue] = React.useState('female');
@@ -545,6 +558,19 @@ function App() {
       <h2>Rating</h2>
       <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
       <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
+      <hr/>
+      <h2>Link</h2>
+      <Typography className={classes2.root}>
+      <Link href="#" onClick={preventDefault}>
+        Link
+      </Link>
+      <Link href="#" onClick={preventDefault} color="inherit">
+        {'color="inherit"'}
+      </Link>
+      <Link href="#" onClick={preventDefault} variant="body2">
+        {'variant="body2"'}
+      </Link>
+    </Typography>
       <hr/>
     </div>
 
