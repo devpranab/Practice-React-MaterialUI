@@ -69,7 +69,9 @@ import Snackbar from '@material-ui/core/Snackbar';
 import CloseIcon from '@material-ui/icons/Close';
 import Backdrop from '@material-ui/core/Backdrop';
 // from another file
-import CustomizedMenus from './MoreMUI';
+import CustomizedMenus from './CustomizedMenus';
+import Portal from '@material-ui/core';
+import SimplePortal from './Portal';
 
 // for data & time
 const useStyles = makeStyles((theme) => ({
@@ -703,6 +705,10 @@ function App() {
     <h2>Menu</h2>
     <CustomizedMenus/>
     <hr/>
+    <h2>Portal</h2>
+    <SimplePortal/>
+    <hr/>
+    
     </div>
 
   );
